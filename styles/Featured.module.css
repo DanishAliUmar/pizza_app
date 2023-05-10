@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+.container{
+    height: calc(100vh - 100px);
+    background-color: rgb(235, 114, 33);
+    overflow: hidden;
+    position: relative;
+}
+.arrowContainer{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 2;
+    background: #0000008c;
+    border-radius: 50%;
+}
+.arrow{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+
+}
+
+
+.imgContainer{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20vh;
+    color: white;
+    text-align: center;
+}
+.main_heading{
+font-size: 60px;
+font-weight: 900;
+font-family: 'Londrina Outline', cursive;
+max-width: 60vw;
+letter-spacing: 5px;
+} 
+.tagline{
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+    padding: 20px 40px;
+    border-radius: 10px 0 10px 0;
+    background:linear-gradient(to right, #ff6a00, #ee0979);
+    border: none;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: white;
+    font-size: 18px;
+}
+.btn:hover{
+    transform: scale(1.2);
+    offset: 1px;
+    outline:1px solid linear-gradient(to right, #ee0979, #ff6a00) ;
+    background:linear-gradient(to right, #ee0979, #ff6a00);
+}
+.hambar{
+    color: white;
+}
+@media screen and (max-width: 1240px) {
+    
+.main_heading{
+    font-size: 40px;
+    max-width: 80vw;
+    } 
+    .tagline{
+        font-size: 16px;
+        max-width: 80vw;
+    }
+  }
+@media screen and (max-width: 1024px) {
+    .arrowContainer {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+    }
+  }
+@media screen and (max-width: 480px) {
+    .container{
+        height: 60vh;
+    }
+    .imgContainer{
+        padding-top: 10vh;
+    }
+    .main_heading{
+        font-size: 25px;
+        max-width: 80vw;
+        } 
+        .tagline{
+            font-size: 12px;
+            max-width: 80vw;
+        }
+        .btn{
+            padding: 10px 20px;
+        }
+  }

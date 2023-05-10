@@ -1,0 +1,44 @@
+ .container{
+    width: 22%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+ }
+
+ .title{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(235, 114, 33);
+ }
+
+ .price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+ }
+
+ .desc{
+    text-align: center;
+    color: #777;
+ }
+
+ @media screen and (max-width: 992px) {
+   .container {
+     width: 100%;
+   }
+ 
+   .title {
+     font-size: 30px;
+   }
+ 
+   .price,
+   .desc {
+     font-size: 24px;
+   }
+ }
+ 

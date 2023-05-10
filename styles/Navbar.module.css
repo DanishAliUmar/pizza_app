@@ -1,0 +1,115 @@
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+}
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.item:nth-child(2) {
+  flex: 3;
+}
+.item:last-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: end;
+}
+.callButton {
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+.texts {
+  margin-left: 20px;
+  color: white;
+}
+.text:first-child {
+  font-size: 12px;
+  font-weight: 500;
+}
+.text:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  color: white;
+}
+.listItem {
+  font-weight: 500;
+  cursor: pointer;
+  padding:10px 20px;
+  transition: all .4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.listItem:hover{
+    background-color: white;
+    color:#ee0979;
+    
+}
+
+.cart {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(235, 114, 33);
+}
+.logo {
+  font-size: 40px;
+  font-family: "Londrina Outline", cursive;
+  color: white;
+}
+.hambar_box{
+    display: none;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+  .item:nth-child(2) {
+    flex: 5;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+  .hambar_box{
+    display: block;
+}
+  .item:nth-child(1) {
+    flex: 3;
+  }
+}
